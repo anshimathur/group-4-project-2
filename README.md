@@ -61,3 +61,28 @@ This project explores global life expectancy data and prepares it for predictive
 ## 📌 Notes
 
 This repository is currently in active development. All preprocessing has been completed in the `dataframe-cleanup` branch and is ready for model training.
+
+---
+
+## 📊 Additional Analyses
+
+### 🔢 Regression Modeling (`Regression_LE.ipynb`)
+- Implemented linear regression and random forest regressor models
+- Investigated predictors such as `Adult Mortality` and `infant deaths` using scatter plots and correlation coefficients
+- Evaluated model performance using R² and RMSE
+- Visualized life expectancy relationships with key numeric predictors
+
+### 🧠 Classification Exploration (`peyton_classification.ipynb`)
+- Introduced classification models to segment life expectancy into categorical bands
+- Handled missing values with median imputation
+- Used label encoding and feature scaling
+- Trained and compared multiple classifiers: Logistic Regression, Random Forest, SVM, KNN, and Neural Networks
+- Evaluated models using accuracy, precision, recall, F1-score, and ROC AUC
+
+---
+
+## 📌 Updated Notes
+
+- The team explored both regression and classification frameworks using the same dataset
+- New feature engineering and scaling pipelines were incorporated
+- The analysis supports hypothesis testing through statistical correlation and model interpretability
