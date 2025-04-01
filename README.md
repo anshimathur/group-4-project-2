@@ -14,7 +14,7 @@ This project explores global life expectancy data and prepares it for predictive
 
 ## ✅ Project Progress
 
-### 1. **Data Loading**
+### 1. **Data Loading** (`data_cleaning_and_exploration.ipynb`)
 - Imported CSV into a pandas DataFrame
 - Displayed structural and summary information using `.info()` and `.head()`
 
@@ -34,18 +34,33 @@ This project explores global life expectancy data and prepares it for predictive
 - Dropped `Country` due to high cardinality (193 unique values)
 - Encoded `Status` (Developing/Developed) using one-hot encoding and replaced the original column
 
-### 5. **Feature Scaling**
+### 5. **Split the Dataset**
+- Split the data into training and test data.
+
+### 6. **Feature Scaling**
 - Scaled all numeric features (excluding the target) using `StandardScaler`
 - Replaced raw numeric values with standardized ones for consistent modeling input
 
----
+### 7. **Exported Datasets**
+- Created CSV files of train and test data, scaled X data, and raw data. 
 
-## 🎯 Next Steps
+### 8. **Modeling and Analysis**
+#### 🔢 Regression Modeling (`regression_workbook.ipynb`)
+- Implemented linear regression and random forest regressor models
+- Investigated predictors such as `Adult Mortality` and `infant deaths` using scatter plots and correlation coefficients
+- Evaluated model performance using R² and RMSE
+- Visualized life expectancy relationships with key numeric predictors
 
-- Split the dataset into training and test sets
-- Begin regression modeling to predict life expectancy
-- Evaluate models using R², RMSE, and MAE
-- Explore feature importance and visualize top predictors
+#### 🧠 Classification Exploration (`classification_workbook.ipynb`)
+- Introduced classification models to segment life expectancy into categorical bands
+- Handled missing values with median imputation
+- Used label encoding and feature scaling
+- Trained and compared multiple classifiers: Logistic Regression, Random Forest, SVM, KNN, and others
+- Evaluated models using accuracy, precision, recall, F1-score, and ROC AUC
+
+### 9. **Created Presentation**
+- Presentation created in Google Drive
+- Exported Group_4_Project_2_Presentation as PDF and uploaded to repository
 
 ---
 
@@ -56,28 +71,6 @@ This project explores global life expectancy data and prepares it for predictive
 - **James Segovia**
 - **Peyton Lambourne**
 
----
-
-## 📌 Notes
-
-This repository is currently in active development. All preprocessing has been completed in the `dataframe-cleanup` branch and is ready for model training.
-
----
-
-## 📊 Additional Analyses
-
-### 🔢 Regression Modeling (`Regression_LE.ipynb`)
-- Implemented linear regression and random forest regressor models
-- Investigated predictors such as `Adult Mortality` and `infant deaths` using scatter plots and correlation coefficients
-- Evaluated model performance using R² and RMSE
-- Visualized life expectancy relationships with key numeric predictors
-
-### 🧠 Classification Exploration (`peyton_classification.ipynb`)
-- Introduced classification models to segment life expectancy into categorical bands
-- Handled missing values with median imputation
-- Used label encoding and feature scaling
-- Trained and compared multiple classifiers: Logistic Regression, Random Forest, SVM, KNN, and Neural Networks
-- Evaluated models using accuracy, precision, recall, F1-score, and ROC AUC
 
 ---
 
