@@ -1,6 +1,15 @@
+
 # 🌍 Life Expectancy Data Analysis – Group 4 Project 2
 
 This project explores global life expectancy data and prepares it for predictive modeling. The dataset includes health, economic, and demographic indicators for various countries across multiple years.
+
+---
+
+## 💡 Hypothesis
+
+> **Health, social, and/or economic factors can be used to model life expectancy outcomes with high predictability.**
+
+This hypothesis guided our modeling choices across both regression and classification tasks. We tested it by examining relationships between key features (e.g., mortality, GDP, schooling, health expenditure) and life expectancy, aiming to build robust predictive models.
 
 ---
 
@@ -64,13 +73,47 @@ This project explores global life expectancy data and prepares it for predictive
 
 ---
 
+## 🔧 Requirements
+
+To run the notebooks, install the following packages:
+
+```bash
+pip install pandas numpy scikit-learn matplotlib seaborn jupyter notebook
+```
+
+Or install everything from a requirements file:
+
+```bash
+pip install -r requirements.txt
+```
+
+Minimum environment:
+
+- Python ≥ 3.8
+- Jupyter Notebook
+- pandas ≥ 1.3
+- scikit-learn ≥ 1.0
+- seaborn/matplotlib for visualizations
+
+---
+
+## ✅ Project Summary & Conclusion
+
+Our models confirm that **health, social, and economic indicators** are highly predictive of life expectancy. Both regression and classification approaches supported this:
+
+- Random forest regression achieved an R² over **0.97**, demonstrating excellent predictive power.
+- Classification models performed well in segmenting life expectancy into groups, with **Random Forest and SVM** delivering strong scores across multiple metrics.
+
+Thus, our hypothesis is **strongly supported**: accessible public data on economic and health metrics can effectively model life expectancy, with implications for health policy and resource prioritization.
+
+---
+
 ## 👥 Team Members
 
 - **Chad Bradford**
 - **Anshi Mathur**
 - **James Segovia**
 - **Peyton Lambourne**
-
 
 ---
 
