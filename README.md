@@ -106,6 +106,8 @@ Our models confirm that **health, social, and economic indicators** are highly p
 
 Thus, our hypothesis is **strongly supported**: accessible public data on economic and health metrics can effectively model life expectancy, with implications for health policy and resource prioritization.
 
+Given **more time**, we could explore feature engineering, interactions between variables, and additional model tuning to further optimize performance, improve both classification and regression accuracy, and potentially expand into other modeling approaches for deeper insights.
+
 ---
 
 ## 👥 Team Members
